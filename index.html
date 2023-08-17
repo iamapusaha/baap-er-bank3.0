@@ -9,12 +9,45 @@
 </head>
 
 <body>
-    <header class="mt-4">
-        <h1 class="text-3xl text-center">Welcome to my Functional <span class="font-medium text-red-300">Baap Er
+    <header class="mt-8">
+        <h1 class="text-6xl text-center">Welcome to my Functional <span class="font-medium text-red-300">Baap Er
                 Bank</span>!!!</h1>
     </header>
     <main>
-
+        <section class="mt-8">
+            <div class="w-9/12 mx-auto grid grid-cols-3 gap-4 text-white">
+                <div class="bg-lime-400 rounded p-8">
+                    <h1 class="text-3xl font-medium">Deposit</h1>
+                    <h2 class="text-6xl font-semibold">$<span id="deposit-total">00</span></h2>
+                </div>
+                <div class="bg-orange-400 rounded p-8">
+                    <h1 class="text-3xl font-medium">Withdraw</h1>
+                    <h2 class="text-6xl font-semibold">$<span id="withdraw-total">00</span></h2>
+                </div>
+                <div class="bg-indigo-400 rounded p-8">
+                    <h1 class="text-3xl font-medium">Balance</h1>
+                    <h2 class="text-6xl font-semibold">$<span id="balance-total">00</span></h2>
+                </div>
+            </div>
+        </section>
+        <section class="mt-10">
+            <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto">
+                <div class="bg-fuchsia-500 rounded p-8 text-white">
+                    <h2 class="text-3xl font-medium mb-3">Please Deposit</h2>
+                    <input id="deposit-field" class="text-black w-9/12 p-2 rounded text-2xl block mb-3" type="text"
+                        placeholder="$ please input your deposit amount">
+                    <button id="btn-deposit"
+                        class="bg-cyan-700 px-6 py-4 text-2xl rounded hover:bg-cyan-400">Deposit</button>
+                </div>
+                <div class="bg-indigo-500 rounded p-8 text-white">
+                    <h2 class="text-3xl font-medium mb-3">Please Withdraw</h2>
+                    <input id="withdraw-field" class="text-black w-9/12 p-2 rounded text-2xl block mb-3" type="text"
+                        placeholder="$ please input your withdraw amount">
+                    <button id="btn-withdraw"
+                        class="bg-cyan-700 px-6 py-4 text-2xl rounded hover:bg-cyan-400">Withdraw</button>
+                </div>
+            </div>
+        </section>
     </main>
 </body>
 
